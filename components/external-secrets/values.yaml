@@ -4,5 +4,5 @@ cluster:
 vault:
   kvEngine: "application"
   mountPath: "application"
-  serverAddress: "<YOUR-SERVER>"
+  serverAddress: "host.docker.internal:8200"
   tokenSecret: "vault-token"
