@@ -1,10 +1,7 @@
+cluster:
+  applicationsNamespace: "apps-system"
+
 vault:
-  accountRole: "sa-role"
   kvEngine: "application"
   mountPath: "application"
-  namespace: "gdg"
   serverAddress: "<YOUR-SERVER>"
-
-external-secrets:
-  serviceAccount:
-    name: "vault-secrets"

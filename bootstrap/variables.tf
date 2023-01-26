@@ -12,6 +12,27 @@ variable argo_cd_namespace {
   default = "argocd"
 }
 
+# === Cluster ===
+
+variable applications_namespace {
+  description = "Namespace where the External Secrets Operator lays"
+  type = string
+  default = "apps-system"
+}
+
+# === Vault ===
+
+variable vault_dev_token_secret {
+  description = "Name of the secret for the Vault Token "
+  type = string
+  default = "vault-token"
+}
+
+variable vault_dev_token {
+  description = "Value of the token at creation of a development cluster"
+  type = string
+}
+
 # === GitOps ===
 
 variable gitops_monorepo {
@@ -23,5 +44,5 @@ variable gitops_monorepo {
 variable gitops_bootstrap {
   description = "Value of the path where is the App of Apps which sets the infrastructure"
   type = string
-  default = "bootstrap"
+  default = "cluster-config"
 }
