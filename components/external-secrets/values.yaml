@@ -5,3 +5,4 @@ vault:
   kvEngine: "application"
   mountPath: "application"
   serverAddress: "<YOUR-SERVER>"
+  tokenSecret: "vault-token"
