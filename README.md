@@ -160,6 +160,7 @@ brew install jq
 Reference:
 * redirect file to jq: https://stackoverflow.com/questions/53280090/parse-error-invalid-numeric-literal-at-line-2-column-0/53280264#53280264
 * sed is only for text replacement https://www.cyberciti.biz/faq/how-to-use-sed-to-find-and-replace-text-in-files-in-linux-unix-shell/
+* remove the namespace with finalizers: https://phoenixnap.com/kb/kubernetes-delete-namespace
 
 ##### 7.b.4. patch with forwarding
 1. Open the proxy from a separate terminal
